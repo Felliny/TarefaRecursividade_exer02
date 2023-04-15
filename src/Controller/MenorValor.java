@@ -7,10 +7,10 @@ public class MenorValor {
     }
 
     public int vetorMenor(int[] vetor, int tamanho) {
-        if (tamanho == 1) {
+        if (tamanho == 1) { // condição de parada
             return vetor[0];
         } else {
-            int menor= vetorMenor(vetor, tamanho - 1);
+            int menor= vetorMenor(vetor, tamanho - 1); // chamada da recursiva
 
             if (vetor[tamanho - 1] < menor) {
                 return vetor[tamanho - 1];
